@@ -153,8 +153,7 @@ public class HorarioAClase {
     private static ArrayList<String> getRawHtmls(){
         ArrayList<String> rawHtmls = new ArrayList<>();
         
-        //File docsFolder = new File("C:\\horarios"); //--> Win, Jorge
-        String path = System.getProperty("user.dir"); //--> Dirección relativa a la app
+        String path = System.getProperty("user.dir"); //Dirección relativa a la app
         File docsFolder = new File(path+"/horarios");
         if(docsFolder == null){
             System.out.println("Error: la carpeta no existe");

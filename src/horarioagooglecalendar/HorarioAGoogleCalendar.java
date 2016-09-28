@@ -37,7 +37,7 @@ public class HorarioAGoogleCalendar {
             return;
         }
         //DEBUG
-        //for(Clase c : clases) c.print();  
+        for(Clase c : clases) c.print();  
         //END_DEBUG
         
         System.out.println("Clases extraidas correctamente");
