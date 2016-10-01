@@ -7,9 +7,11 @@ package horarioagooglecalendar;
 
 import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -30,7 +32,8 @@ public class HorarioAClase {
     private static final ArrayList<String> monthNames = new ArrayList<>(Arrays.asList("Gener","Febrer","Març", "Abril","Maig","Juny","Juliol","Agost", "Setembre","Octubre", "Novembre","Desembre"));
     
     
-    protected static ArrayList<Clase> getClases(ArrayList<Document> docs){
+    @SuppressWarnings("deprecation")
+	protected static ArrayList<Clase> getClases(ArrayList<Document> docs){
         ArrayList<Clase> clases = new ArrayList<>();
         //Magia de JSoup
         
@@ -96,9 +99,13 @@ public class HorarioAClase {
                 
                 String tituloDesc = evento.getElementsByClass("fc-event-title").first().text();
 
+                //DEBUG
+                //System.out.println(tituloDesc);
+                //END_DEBUG
+                
                 titulo = tituloDesc.substring(0,tituloDesc.indexOf("Grup")).replaceAll("[0-9-]", "");
                 descripcion = tituloDesc.substring(tituloDesc.indexOf("Grup"));
-
+                
                 clase = new Clase(diaInicio,diaFin,titulo,descripcion);
                 //DEBUG
                 //clase.print();
@@ -126,7 +133,8 @@ public class HorarioAClase {
      * del numero comp , dado un error err.
      * 
      */
-    private boolean inRange(int input , int comp , int err){
+    @SuppressWarnings("unused")
+	private boolean inRange(int input , int comp , int err){
         return (input < comp + err  && input > comp - err);
     }
     
@@ -150,7 +158,8 @@ public class HorarioAClase {
         return documentos;
     }
     
-    private static ArrayList<String> getRawHtmls(){
+    @SuppressWarnings("unused")
+	private static ArrayList<String> getRawHtmls(){
         ArrayList<String> rawHtmls = new ArrayList<>();
         
         String path = System.getProperty("user.dir"); //Dirección relativa a la app
@@ -164,11 +173,10 @@ public class HorarioAClase {
                 System.out.println("Cargando fichero"+ doc.getName());
                 
                 StringBuilder content = new StringBuilder();
-
                 BufferedReader reader;
                 try {
-                    reader = new BufferedReader(new FileReader(doc));
-                } catch (FileNotFoundException ex) {
+                	reader = new BufferedReader(new InputStreamReader(new FileInputStream(doc.getAbsolutePath()), "ISO-8859-1"));
+                } catch (FileNotFoundException | UnsupportedEncodingException ex) {
                     Logger.getLogger(HorarioAGoogleCalendar.class.getName()).log(Level.SEVERE, null, ex);
                     System.out.println("Error al cargar el fichero "+ doc.getName());
                     continue;
