@@ -9,6 +9,7 @@
 
 package horarioagooglecalendar;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ public class HorarioAGoogleCalendar {
 	 * Be sure to specify the name of your application. If the application name is {@code null} or
 	 * blank, the application will log a warning. Suggested format is "MyCompany-ProductName/1.0".
 	 */
-	private static final String APPLICATION_NAME = "HorarioUPF";
+	private static final String APPLICATION_NAME = "Horario a Google Calendar";
 
 	/** Directory to store user credentials. */
 	private static final java.io.File DATA_STORE_DIR =
@@ -66,7 +67,7 @@ public class HorarioAGoogleCalendar {
 	private static Credential authorize() throws Exception {
 		// load client secrets
 		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY,
-				new InputStreamReader(CalendarSample.class.getResourceAsStream("/client_secrets.json")));
+				new InputStreamReader(new FileInputStream(System.getProperty("user.dir")+"/client_secrets.json")));
 		if (clientSecrets.getDetails().getClientId().startsWith("Enter")
 				|| clientSecrets.getDetails().getClientSecret().startsWith("Enter ")) {
 			System.out.println(
