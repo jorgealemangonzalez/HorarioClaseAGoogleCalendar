@@ -1,0 +1,198 @@
+/* Validada */
+/*-------------------------------------------------------------------------------------------------
+-Producto:	ESTIL
+-Universidad: UPF
+-Versión: rev. 2.0.57
+-Compatibilidad: FF 3.X y sup., IE 7 y sup., Chrome 12 y sup., Opera 10 y sup., Safari 5 y sup.
+-Autores:	ARAM, AVIM, EROF, JMSM, RCOJ, TMOP 
+			SIGMA Gestión Universitaria
+			http://www.gestionuniversitariasigma.com/
+---------------------------------------------------------------------------------------------------*/
+#AplZonaFlujo, #aplZonaFlujo
+{
+position:relative;
+background-color:transparent;
+margin: 10px 10px 10px 10px;
+
+}
+
+#AplZonaFlujo ul, #aplZonaFlujo ul
+{
+
+  background:transparent;
+  font-weight: bold;
+  text-align: center; 
+  margin: 0; 
+  padding: 20px 0px; 
+  list-style-type:none; 
+  background-color:transparent;  
+}
+
+#AplZonaFlujo ul li, #aplZonaFlujo ul li
+{
+
+  display: inline-block; 
+  background:url("imagenes/flujo_linea.png") repeat-x;	
+  width: 120px; 
+  height: 95px; 
+  margin: 0px 0px 0px -3px; 
+  padding: 0; 
+  text-align: center; 
+  display: -moz-inline-stack; /* FF2*/ 
+  display: inline-block;
+  zoom: 1; /* IE7 (hasLayout)*/  
+  *display: inline; /* IE */ 
+  *_height: 130px; /* IE6 */ 
+  !width: 120px; 
+  
+  /*border:1px solid blue;*/
+}
+
+#AplZonaFlujo ul li a, #aplZonaFlujo ul li a
+{
+
+  margin: 0; 
+  color:#000; 
+  display:block; 
+  float:left; 
+  text-decoration: none;
+  font-size: 11px; 
+  font-weight:bold; 
+  padding-top: 70px;
+  width:92px; 
+  background: url("imagenes/flujo_normal.png") -105px 13px no-repeat; 
+}
+
+
+#AplZonaFlujo ul li a:hover, #aplZonaFlujo ul li a:hover
+{
+  background: url("imagenes/flujo_normal.png") -105px -390px no-repeat; 
+  width:92px;
+
+}
+
+#AplZonaFlujo .current a, #aplZonaFlujo .current a { 
+  text-decoration:underline; 
+  background: url("imagenes/flujo_normal.png") -105px -130px no-repeat; 
+  width:92px;
+  color: #A80F19;
+}
+
+#AplZonaFlujo .current a:hover, #aplZonaFlujo .current a:hover { 
+  text-decoration:underline; 
+  background: url("imagenes/flujo_normal.png") -105px -130px no-repeat; 
+  width:92px;
+  color: #A80F19;
+}
+
+#AplZonaFlujo .disabled a, #aplZonaFlujo .disabled a { 
+  background: url("imagenes/flujo_normal.png") -105px -260px no-repeat; 
+  color:#9B9C9E; 
+  width:92px;
+}
+
+#AplZonaFlujo .disabled a:hover, #aplZonaFlujo .disabled a:hover { 
+  background: url("imagenes/flujo_normal.png") -105px -260px no-repeat; 
+  color:#9B9C9E;
+  cursor:not-allowed; 
+  text-decoration:none; 
+  width:92px;
+  }
+
+
+
+
+/* FIRST */
+
+
+#AplZonaFlujo .first a { 
+  background: url("imagenes/flujo_normal.png") -105px 13px no-repeat; 
+  width: 92px ; 
+}
+
+#AplZonaFlujo .first a:hover { 
+  background: url("imagenes/flujo_normal.png") -105 -390px no-repeat;
+  width: 92px ;
+ }
+
+#AplZonaFlujo .first.current a { 
+  background: url("imagenes/flujo_normal.png") -105px  -130px no-repeat; 
+  font-size: 14px;
+  width: 92px; 
+  color: #A80F19;  
+  font-size: 11px; 
+  font-weight:bold; 
+}
+  
+#AplZonaFlujo .first.current a:hover { 
+  background: url("imagenes/flujo_normal.png") -105px  -130px no-repeat; 
+  font-size: 14px;
+  width: 92px; 
+  color:#A80F19;  
+  font-size: 11px; 
+  font-weight:bold; 
+}
+
+#AplZonaFlujo .first.disabled a { 
+  background: url("imagenes/flujo_normal.png") -105px  -260px no-repeat; 
+  color:#9B9C9E; 
+  text-decoration:none; 
+  cursor:default;
+  width: 92px ;
+}
+
+#AplZonaFlujo .first.disabled a:hover { 
+  background: url("imagenes/flujo_normal.png") -105px  -260px no-repeat; 
+  width: 92px;
+  cursor:not-allowed;
+}
+
+
+/* LAST*/
+
+#AplZonaFlujo .last{
+ width:95px;
+ }
+ 
+#AplZonaFlujo .last a { 
+  background: url("imagenes/flujo_normal.png") -105px  13px no-repeat; 
+  width: 92px;
+}
+
+#AplZonaFlujo .last a:hover { 
+  background: url("imagenes/flujo_normal.png") -105px  -390px no-repeat; 
+  width: 92px;
+}
+
+#AplZonaFlujo .last.current a { 
+  background: url("imagenes/flujo_normal.png") -105px  -130px no-repeat; 
+  font-size: 14px; 
+  width: 92px; 
+  color: #A80F19;   
+  font-size: 11px; 
+  font-weight:bold; 
+}
+  
+#AplZonaFlujo .last.current a:hover { 
+  background: url("imagenes/flujo_normal.png") -105px  -130px no-repeat;
+  font-size: 14px; 
+  width: 92px; 
+  color: #A80F19;   
+  font-size: 11px; 
+  font-weight:bold; 
+}
+
+#AplZonaFlujo .last.disabled a { 
+  background: url("imagenes/flujo_normal.png") -105px  -260px no-repeat; 
+  color:#9B9C9E;
+  width: 92px; 
+}
+
+#AplZonaFlujo .last.disabled a:hover {
+   background: url("imagenes/flujo_normal.png") -105px  -260px no-repeat; 
+   text-decoration:none; 
+   cursor:default; 
+   width: 92px;
+   cursor:not-allowed;
+ }
+

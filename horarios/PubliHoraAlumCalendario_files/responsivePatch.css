@@ -1,0 +1,134 @@
+ /*Naus nou*/
+ 
+header , #page-leftbar, #page-heading, footer{
+    font-family: 'Source Sans Pro','Segoe UI','Droid Sans',Tahoma,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+} 
+ 
+header a.leftmenu-trigger, header a.rightmenu-trigger, header a.headerbardropdown {
+  padding: 13px 12px !important;
+}
+
+header li.increaseFont a, header li.resetFont a, header li.decreaseFont a{
+
+  padding-top: 13px !important;
+}  
+ 
+header a.username span{
+  font-size: 12px !important;
+} 
+
+#acercaDe .modal-dialog{
+  font-family: 'Source Sans Pro','Segoe UI','Droid Sans',Tahoma,Arial,sans-serif;
+  color:#4d4d4d !important ;
+  font-size: 14px !important;
+}
+
+/*apl.css*/
+
+#htmlBody {
+font-family: Verdana, Arial, sans-serif !important;
+margin-bottom:70px;
+}
+
+#htmlBody .Titulo,#htmlBody .titulo  {
+
+background-color:#4C4C4C;
+border-bottom:0px solid #9F9F9F;
+padding:10px;
+position:relative;
+top:0px;
+text-align:left;
+width:auto;
+color: #FFF;
+font-size: 13px;
+font-weight:bolder;
+text-transform:uppercase;
+
+}
+
+#htmlBody #AplZonaEdicion table.taulaeditable, 
+#htmlBody #AplZonaEdicion table.taulainformativa, 
+#htmlBody #AplZonaEdicion table.tauladobleentrada,
+#htmlBody #AplZonaSeleccion table 
+ {
+  border-collapse:inherit !important;
+}
+
+#htmlBody #AplZonaCabecera .Campo, #htmlBody #AplZonaCabecera .campo 
+{
+background-color:transparent;
+color:#000;
+font-size: 11px;
+font-weight:bold;
+text-align: right;
+padding: 2px 0px 2px 10px;
+background-position: 0 2px;
+}
+
+#htmlBody #AplZonaEdicion .Campo, #htmlBody #AplZonaEdicion .campo
+{ 
+text-align: left;
+background-color:transparent;
+/*width:20%;*/
+color:#000;
+font-size:11px;
+font-weight:bold;
+padding-top:2px;
+padding-left:14px;
+padding-bottom:2px;
+
+}
+
+
+#htmlBody #AplZonaCabecera .Valor, #htmlBody #AplZonaCabecera .valor 
+{     
+background-color:transparent;
+color:#7E7F71;
+font-weight:normal;
+font-size:11px;
+text-align: left;
+padding-left: 10px;
+padding: 2px 0 2px 10px;
+}
+
+
+#htmlBody #AplZonaEdicion .Valor, #htmlBody #AplZonaEdicion .valor
+{ 
+background-color:#F4F4F4;
+color:#686665;
+text-align:left;
+padding-top:2px;
+padding-left:10px;
+padding-bottom:2px;
+font-size:11px;
+}
+
+
+#htmlBody legend{
+  border:0px solid #fff;
+  width:auto;
+  margin:0;
+   
+}
+/* nav.css*/
+
+div #login {
+ box-sizing: content-box !important;
+}
+
+
+ /* JQuery UI*/
+
+.ui-dialog{
+  position:relative !important;
+}
+
+/* DataTables */
+
+div.dataTables_wrapper{
+  width: 90%;
+  margin: 0 auto;
+}

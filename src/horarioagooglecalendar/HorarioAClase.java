@@ -55,19 +55,30 @@ public class HorarioAClase {
             //Guardamos la fecha del lunes
             
             String[] startDate = doc.getElementsByClass("fc-header-title").first().text().split(" ");
+            
             int startYear = Integer.parseInt(startDate[startDate.length-1]);
-            int startMonth = monthNames.indexOf(startDate[1]);
-            int startDay = Integer.parseInt(startDate[0]);
+            int startMonth = monthNames.indexOf(startDate[startDate.length-2]);
+            int startDay = Integer.parseInt(startDate[startDate.length-3]);
+            
             
             Date date = new Date(startYear - 1900,startMonth , startDay );
+           
+            date.setTime(date.getTime()-1000*60*60*24*5);
             //DEBUG 2016 9 26
-            //System.out.println("date : "+ (date.getYear()+1900) + " " + date.getMonth() + " " + date.getDate());
+            //for(String s : startDate)
+            //	System.out.println(s);
+            //System.out.println(date);
+            //System.out.println("date : "+ (date.getYear()+1900) + " " + ((int)date.getMonth()+1) + " " + date.getDate());
             //END_DEBUG
             
             //Obtener cada una de las clases
             Element eventosElemento = calendar.getElementsByClass("fc-event-container").first();
             Elements eventos = eventosElemento.getElementsByClass("fc-event");
             for(Element evento : eventos){
+            	String tituloDesc = evento.getElementsByClass("fc-event-title").first().text();
+            	if(tituloDesc.equals("Dia festiu"))
+            		continue;
+            	
                 Date diaInicio = (Date)date.clone();
                 Date diaFin;
                 String horaInicio ;
@@ -88,7 +99,8 @@ public class HorarioAClase {
                 //System.out.println("Dia : "+ (dia.getYear()+1900) + " " + dia.getMonth() + " " + dia.getDate());
                 //END_DEBUG
                 //Obtener horas de inicio y fin
-                String[] intervalHora = evento.getElementsByClass("fc-event-time").first().text().split(" - ");
+                Elements els = evento.getElementsByClass("fc-event-time");
+                String[] intervalHora = els.first().text().split(" - ");
                 horaInicio = intervalHora[0];
                 horaFin = intervalHora[1];
                 diaFin = (Date)diaInicio.clone();
@@ -97,7 +109,7 @@ public class HorarioAClase {
                 diaFin.setHours(Integer.parseInt(horaFin.split(":")[0]));
                 diaFin.setMinutes(Integer.parseInt(horaFin.split(":")[1]));
                 
-                String tituloDesc = evento.getElementsByClass("fc-event-title").first().text();
+                
 
                 //DEBUG
                 //System.out.println(tituloDesc);
@@ -168,6 +180,9 @@ public class HorarioAClase {
             System.out.println("Error: la carpeta no existe");
             return null;
         }
+        //DEBUG
+        System.out.println("Number of files "+docsFolder.listFiles().length);
+        //END_DEBUG
         for(File doc : docsFolder.listFiles()){
             if(doc.getPath().endsWith(".html") || doc.getPath().endsWith(".htm")){  //Google lo guarda con .htm
                 System.out.println("Cargando fichero"+ doc.getName());
