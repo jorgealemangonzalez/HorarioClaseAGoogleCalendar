@@ -10,14 +10,16 @@ import java.util.Date;
 public class Clase {
     Date diaInicio;
     Date diaFin;
+    Date lunesSemana;
     String horaFin;
     String titulo;
     String descripcion;
     
     
-    public Clase(Date diaInicio , Date diaFin, String titulo ,String descripcion){
+    public Clase(Date diaInicio , Date diaFin, Date lunesSemana, String titulo ,String descripcion){
         this.descripcion = descripcion;
         this.diaInicio = diaInicio;
+        this.lunesSemana = lunesSemana;
         this.diaFin = diaFin;
         this.titulo = titulo;
     }

@@ -125,7 +125,7 @@ public class HorarioAClase {
                 titulo = tituloDesc.substring(0,tituloDesc.indexOf("Grup")).replaceAll("[0-9-]", "");
                 descripcion = tituloDesc.substring(tituloDesc.indexOf("Grup"));
                 
-                clase = new Clase(diaInicio,diaFin,titulo,descripcion);
+                clase = new Clase(diaInicio,diaFin,date,titulo,descripcion);
                 //DEBUG
                 //clase.print();
                 //END_DEBUG
@@ -140,7 +140,7 @@ public class HorarioAClase {
     /**
      * Añadir o quitar dias al date 
      */
-    private static void changeDay(Date date , int numDays){
+    public static void changeDay(Date date , int numDays){
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         cal.add(Calendar.DATE , numDays);
