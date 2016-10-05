@@ -1,0 +1,1154 @@
+/* Validada */
+/*-------------------------------------------------------------------------------------------------
+-Producto:	ESTIL
+-Universidad: UPF
+-Versión: rev. 2.0.57
+-Compatibilidad: FF 3.X y sup., IE 7 y sup., Chrome 12 y sup., Opera 10 y sup., Safari 5 y sup.
+-Autores:	ARAM, AVIM, EROF, JMSM, RCOJ, TMOP 
+			SIGMA Gestión Universitaria
+			http://www.gestionuniversitariasigma.com/
+---------------------------------------------------------------------------------------------------*/
+/* -------------------------------------------------------
+Estilos para todos los botones y sus capas asociadas
+----------------------------------------------------------*/
+.sigAccion, .sigAccion
+{
+/*position: relative;*/
+/*display: inline;*/
+display: inline;
+float: none;
+clear: none;
+margin-left:0px;
+height: auto;
+width:auto;
+text-align: center;
+font: 11px Arial, Verdana, Sans-serif;
+font-weight: bold;
+
+
+
+
+/*
+border: 1px solid blue;
+margin-left: auto;
+margin-right: auto;
+width: auto;
+overflow: visible;
+*/
+}
+
+.sigAccion a, .sigAccion a{
+
+cursor:pointer;
+
+}
+
+/* -------------------------------------------------------
+PARA TODOS LOS BOTONES
+----------------------------------------------------------*/
+
+.sigAccion a.sigBtnHref , .sigAccion a.sigBtnFreeHref, .sigAccion a.sigBtnHref , .sigAccion a.sigBtnFreeHref,
+.sigAccion a.sigBtnFreeHrefXL, .sigAccion a.sigBtnFreeHrefXXL, .sigAccion a.sigBtnFreeHrefXL, .sigAccion a.sigBtnFreeHrefXXL
+{
+
+display: inline-block;
+/* No W3C CSSL2 - mantener la última */
+float: none;
+clear: none;
+text-decoration:none;
+margin-bottom:10px;
+/*border: 1px solid #686665;
+background-color: #DAD8D7;*/
+
+background-image:url(iconos/botontipo4.png);
+background-repeat:no-repeat;
+
+/*display: inline-block;
+
+float: none;
+clear: none;
+text-decoration:none;
+margin-bottom:10px;
+/*border: 1px solid #686665;
+background-color: #DAD8D7;*/
+/*
+background-image:url(iconos/botontipo4.png)!important;
+background-image:url(iconos/botontipo4.gif);
+
+background-repeat:no-repeat;
+
+/*height: 28px;
+padding-left:26px;
+margin: 2px 2px 2px 2px;
+margin-right: 5px;
+margin-left: auto;
+
+text-align: center;
+text-decoration: none;
+color: #487092;
+background-color: transparent;
+background-repeat: no-repeat;*/
+/**background-position: 0 3px !important; /*CODINA*/
+}
+
+
+
+/* -------------------------------------------------------
+BOTONES LIBRES (FONDO 01 + TEXTO)
+----------------------------------------------------------*/
+.sigAccion a.sigBtnFreeHref, .sigAccion a.sigBtnFreeHref
+{
+display: inline-block;
+height:23px;
+width:134px;
+color:#fff;
+text-align:center;
+margin-left:4px;
+margin-right:4px;
+padding-top:3px;
+/**padding-top:5px !important;
+*padding-bottom:4px !important;  */
+/*background-image:url(iconos/botontipo4_v2.png)!important;
+background-image:url(iconos/botontipo4_v2.gif);*/
+background-repeat:no-repeat;
+
+
+/*height:22px;
+width:134px;
+color:#fff;
+text-align:center;
+margin-top:10px;
+margin-left:4px;
+margin-right:4px;
+padding-top:3px;
+*padding-top:5px !important;
+*padding-bottom:4px !important;
+/*background-image:url(iconos/botontipo4_v2.png)!important;
+background-image:url(iconos/botontipo4_v2.gif);*/
+/*background-repeat:no-repeat;*/
+
+}
+
+.sigAccion a.sigBtnFreeHref span, .sigAccion a.sigBtnFreeHref span
+{
+background-repeat: no-repeat;
+height:23px;
+width:134px;
+color:#fff;
+padding-left:5px;
+display:block;
+text-align:center;
+
+
+/*background-repeat: no-repeat;
+height:24px;
+width:134px;
+color:#fff;
+padding-bottom:10px;
+padding-top:13px;
+padding-left:5px;
+text-align:center;
+/*background-image:url(iconos/botontipo4_v4.gif)!important;
+background-image:url(iconos/botontipo4_v4.gif);*/
+
+
+
+}
+
+.sigAccion a.sigBtnFreeHref:link, .sigAccion a.sigBtnFreeHref:visited, .sigAccion a.sigBtnFreeHref:link, .sigAccion a.sigBtnFreeHref:visited
+{
+background-position: 0 0px;
+}
+
+.sigAccion a.sigBtnFreeHref:hover, .sigAccion a.sigBtnFreeHref:hover
+{
+background-position: 0 -33px;
+/**background-position: 0 -33px;
+*background-position: 0 -33px !important;*/
+text-decoration:none;
+
+}
+
+
+/* -------------------------------------------------------
+BOTONES LIBRES XL (FONDO 01 XL + TEXTO)
+----------------------------------------------------------*/
+.sigAccion a.sigBtnFreeHrefXL, .sigAccion a.sigBtnFreeHrefXL
+{
+display: inline-block;
+/* No W3C CSSL2 - mantener la última */
+float: none;
+clear: none;
+
+height:23px;
+width:175px;
+color:#fff;
+text-align:center;
+margin-left:4px;
+margin-right:4px;
+padding-top:3px;
+/*padding-top:5px !important;
+*padding-bottom:4px !important;    */
+background-image:url(iconos/XL.png);
+background-repeat:no-repeat;
+/**background-position: 0 3px !important; /*CODINA*/
+text-decoration:none;
+}
+
+.sigAccion a.sigBtnFreeHrefXL span, .sigAccion a.sigBtnFreeHrefXL span
+{
+background-repeat: no-repeat;
+height:22px;
+width:175px;
+color:#fff;
+padding-left:5px;
+display:block;
+
+/*background-image:url(iconos/botontipo4_v4.gif)!important;
+background-image:url(iconos/botontipo4_v4.gif);*/
+text-align:center;
+
+
+}
+
+.sigAccion a.sigBtnFreeHrefXL:link, .sigAccion a.sigBtnFreeHrefXL:visited, .sigAccion a.sigBtnFreeHrefXL:link, .sigAccion a.sigBtnFreeHrefXL:visited
+{
+background-position: 0 0px;
+}
+
+.sigAccion a.sigBtnFreeHrefXL:hover, .sigAccion a.sigBtnFreeHrefXL:hover
+{
+background-position: 0 -33px;
+/**background-position: 0 -33px!important;
+*background-position: 0 -33px;
+*/
+text-decoration:none;
+}
+/* -------------------------------------------------------
+BOTONES LIBRES XXL (FONDO 01 XXL + TEXTO)
+----------------------------------------------------------*/
+.sigAccion a.sigBtnFreeHrefXXL, .sigAccion a.sigBtnFreeHrefXXL
+{
+display: inline-block;
+/* No W3C CSSL2 - mantener la última */
+float: none;
+clear: none;
+
+height:22px;
+width:215px;
+color:#fff;
+text-align:center;
+margin-left:4px;
+margin-right:4px;
+padding-top:3px;
+/*padding-top:5px !important;
+*padding-bottom:4px !important;    */
+background-image:url(iconos/XXL.png);
+background-repeat:no-repeat;
+text-decoration:none;
+/*background-position: 0 3px !important; /*CODINA*/
+}
+
+.sigAccion a.sigBtnFreeHrefXXL span, .sigAccion a.sigBtnFreeHrefXXL span
+{
+
+background-repeat: no-repeat;
+height:22px;
+width:215px;
+color:#fff;
+padding-left:5px;
+display:block;
+/*background-repeat: no-repeat;
+height:22px;
+width:215px;
+color:#fff;
+padding-bottom:10px;
+padding-top:13px;
+padding-left:5px;*/
+
+/*background-image:url(iconos/botontipo4_v4.gif)!important;
+background-image:url(iconos/botontipo4_v4.gif);*/
+text-align:center;
+
+
+}
+
+.sigAccion a.sigBtnFreeHrefXXL:link, .sigAccion a.sigBtnFreeHrefXXL:visited, .sigAccion a.sigBtnFreeHrefXXL:link, .sigAccion a.sigBtnFreeHrefXXL:visited
+{
+background-position: 0 0px;
+}
+
+.sigAccion a.sigBtnFreeHrefXXL:hover, .sigAccion a.sigBtnFreeHrefXXL:hover
+{
+background-position: 0 -33px;
+/**background-position: 0 -33px!important;
+*background-position: 0 -33px;*/
+text-decoration:none;
+
+}
+/* -------------------------------------------------------
+RESTO BOTONES (FONDO 02 + TEXTO)
+----------------------------------------------------------*/
+
+.sigAccion a.sigBtnHref, .sigAccion a.sigBtnHref
+{
+
+
+height:24px;
+width:134px;
+color:#fff;
+text-align:center;
+margin-top:15px;
+margin-left:4px;
+margin-right:4px;
+margin-bottom:10px;
+/**padding-top:15px !important;
+*padding-bottom:4px !important;  */
+
+
+
+/* height:22px;
+width:134px;
+color:#4F0A0A;
+margin-top:10px;
+margin-left:2px;
+margin-right:5px;
+padding-top:3px;
+/*border:2px solid red;*/
+
+}
+
+
+.sigAccion a.sigBtnHref span, .sigAccion a.sigBtnHref span
+{
+
+background-repeat: no-repeat;
+height:23px;
+width:auto;
+display: block;
+color:#fff;
+margin-left:18px;
+padding-left:5px;
+padding-top:2px;
+padding-bottom:2px;
+background-position: 0 -44px;
+
+/*background-repeat: no-repeat;
+height:22px;
+width:134px;
+color:#fff;
+padding-bottom:10px;
+padding-top:6.5px;
+padding-left:42px;
+background-position: 0 -42px;*/
+}
+
+.sigAccion a.sigBtnHref:hover, .sigAccion a.sigBtnHref:hover
+{
+
+background-position: 0 -33px;
+/**background-position: 0 -33px!important;
+*background-position: 0 -33px;*/
+
+/*background-position: 0 -32.5px !important;
+/*background-position: 0 -34.3px; */
+/**background-position: 0 -30.5px !important; */
+text-decoration:none;
+
+}
+
+
+/* -------------------------------------------------------
+SOLAMENTE ICONOS
+----------------------------------------------------------*/
+
+
+
+/* --- resta icones ----*/
+
+.sigAccion a.sigIcnHref, .sigAccion a.sigIcnHref
+{
+
+height:34px;
+width:34px;
+display: inline-block;
+vertical-align: middle;
+/*border:1px solid red;*/
+
+}
+
+.sigAccion a.sigIcnHref span, .sigAccion a.sigIcnHref span
+{
+height:34px;
+width:34x;
+display:block;
+vertical-align: middle;
+
+background-repeat: no-repeat;
+background-position: 0 -38px;
+background-color:transparent;
+/*padding: 0px 0px 14px 8px;
+background-repeat: no-repeat;
+background-position: 0 -36px;
+background-color:transparent;
+height:23px;
+width:20px;
+display: inline-block;
+border:0px solid red;
+margin-left:2px;
+vertical-align: middle;*/
+
+/* No W3C CSSL2 - mantener la última */
+
+}
+
+.sigAccion a.sigIcnHref:hover span, .sigAccion a.sigIcnHref:hover span
+{
+cursor:hand;
+background-position: 0 3px;
+}
+
+.sigAccion a.sigIcnHref.sinHover:hover span, .sigAccion a.sigIcnHref.sinHover:hover span
+{
+cursor:default;
+background-position: 0 -38px;
+}
+
+/* --- icones taula ----*/
+
+.iconos .sigAccion a.sigIcnHref span, .iconos .sigAccion a.sigIcnHref span
+{
+vertical-align: middle;
+text-align:center;
+/*
+padding: 5px 0 5px 8px;
+background-repeat: no-repeat;
+background-position: 0 -35px;
+background-color:transparent;
+height:23px;
+width:20px;
+display: inline-block;
+border:0px solid red;
+margin-left:4px;
+/* No W3C CSSL2 - mantener la última */
+
+}
+
+
+.iconos .sigAccion a.sigIcnHref:hover span, .iconos .sigAccion a.sigIcnHref:hover span
+{
+cursor:hand;
+background-position: 0 2px;
+}
+
+
+.iconos .sigAccion a.sigIcnHref.sinHover:hover span, .iconos .sigAccion a.sigIcnHref.sinHover:hover span
+{
+cursor:default;
+background-position: 0 -38px;
+}
+
+
+/***************************** IMAGENES ***********************************
+*******************************************************************************************************/
+/* Temporal */
+.sigAccion .btnAdvertencia, .sigAccion .btnAdvertencia
+{
+background-image: url(iconos/blanco/advertencia.png);
+}
+
+.sigAccion a.sigIcnHref .btnAdvertencia, .sigAccion a.sigIcnHref .btnAdvertencia
+{
+background-image: url(iconos/blanco/advertencia.png);
+}
+
+.sigAccion .btnQuitar, .sigAccion .btnQuitar
+{
+background-image: url(iconos/blanco/quitar.png);
+}
+
+.sigAccion a.sigIcnHref .btnQuitar, .sigAccion a.sigIcnHref .btnQuitar
+{
+background-image: url(iconos/blanco/quitar.png);
+}
+
+.sigAccion .btnEsp, .sigAccion .btnEsp
+{
+background-image: url(iconos/blanco/btnesp.png);
+}
+
+.sigAccion a.sigIcnHref .btnEsp, .sigAccion a.sigIcnHref .btnEsp
+{
+background-image: url(iconos/blanco/btnesp.png);
+}
+
+.sigAccion .btnCat, .sigAccion .btnCat
+{
+background-image: url(iconos/blanco/btncat.png);
+}
+
+.sigAccion a.sigIcnHref .btnCat, .sigAccion a.sigIcnHref .btnCat
+{
+background-image: url(iconos/blanco/btncat.png);
+}
+
+.sigAccion .btnEus, .sigAccion .btnEus
+{
+background-image: url(iconos/blanco/btneus.png);
+}
+
+.sigAccion a.sigIcnHref .btnEus, .sigAccion a.sigIcnHref .btnEus
+{
+background-image: url(iconos/blanco/btneus.png);
+}
+
+.sigAccion .btnEng, .sigAccion .btnEng
+{
+background-image: url(iconos/blanco/btneng.png);
+}
+
+.sigAccion a.sigIcnHref .btnEng, .sigAccion a.sigIcnHref .btnEng
+{
+background-image: url(iconos/blanco/btneng.png);
+}
+
+
+.sigAccion .btnFra, .sigAccion .btnFra
+{
+background-image: url(iconos/blanco/btnfra.png);
+}
+
+.sigAccion a.sigIcnHref .btnFra, .sigAccion a.sigIcnHref .btnFra
+{
+background-image: url(iconos/blanco/btnfra.png);
+}  
+
+.sigAccion .btnAle, .sigAccion .btnAle
+{
+background-image: url(iconos/blanco/btnale.png);
+}
+
+.sigAccion a.sigIcnHref .btnAle, .sigAccion a.sigIcnHref .btnAle
+{
+background-image: url(iconos/blanco/btnale.png);
+}
+
+.sigAccion .btnIta, .sigAccion .btnIta
+{
+background-image: url(iconos/blanco/btnita.png);
+}
+
+.sigAccion a.sigIcnHref .btnIta, .sigAccion a.sigIcnHref .btnIta
+{
+background-image: url(iconos/blanco/btnita.png);
+}
+
+
+.sigAccion .btnPor, .sigAccion .btnPor
+{
+background-image: url(iconos/blanco/btnpor.png);
+}
+
+.sigAccion a.sigIcnHref .btnPor, .sigAccion a.sigIcnHref .btnPor
+{
+background-image: url(iconos/blanco/btnpor.png);
+}
+
+.sigAccion .btnPlay, .sigAccion .btnPlay
+{
+background-image: url(iconos/blanco/btnplay.png);
+}
+
+.sigAccion a.sigIcnHref .btnPlay, .sigAccion a.sigIcnHref .btnPlay
+{
+background-image: url(iconos/blanco/btnplay.png);
+}
+
+
+.sigAccion .btnPause, .sigAccion .btnPause
+{
+background-image: url(iconos/blanco/btnpause.png);
+}
+
+
+.sigAccion a.sigIcnHref .btnPause, .sigAccion a.sigIcnHref .btnPause
+{
+background-image: url(iconos/blanco/btnpause.png);
+}
+
+
+.sigAccion .btnStop, .sigAccion .btnStop
+{
+background-image: url(iconos/blanco/btnstop.png);
+}
+
+.sigAccion a.sigIcnHref .btnStop, .sigAccion a.sigIcnHref .btnStop
+{
+background-image: url(iconos/blanco/btnstop.png);
+}
+
+.sigAccion a.sigIcnHref .btnMovil, .sigAccion a.sigIcnHref .btnMovil
+{
+background-image: url(iconos/blanco/btnmovil.png);
+}
+
+.sigAccion a.sigIcnHref .btnCarpeta, .sigAccion a.sigIcnHref .btnCarpeta
+{
+background-image: url(iconos/blanco/btncarpeta.png);
+}
+
+.sigAccion a.sigIcnHref .btnSubirCarpeta, .sigAccion a.sigIcnHref .btnSubirCarpeta
+{
+background-image: url(iconos/blanco/btnsubircarpeta.png);
+}
+.sigAccion a.sigIcnHref .btnNuevaCarpeta, .sigAccion a.sigIcnHref .btnNuevaCarpeta
+{
+background-image: url(iconos/blanco/btnnuevacarpeta.png);
+}
+
+.sigAccion a.sigIcnHref .btnAdjunto, .sigAccion a.sigIcnHref .btnAdjunto
+{
+background-image: url(iconos/blanco/btnadjunto.png);
+}
+
+.sigAccion a.sigIcnHref .btnNuevoAdjunto, .sigAccion a.sigIcnHref .btnNuevoAdjunto
+{
+background-image: url(iconos/blanco/btnnuevoadjunto.png);
+}
+
+.sigAccion a.sigIcnHref .btnCargar, .sigAccion a.sigIcnHref .btnCargar
+{
+background-image: url(iconos/blanco/btncargar.png);
+}
+
+.sigAccion a.sigIcnHref .btnLapiz, .sigAccion a.sigIcnHref .btnLapiz
+{
+background-image: url(iconos/blanco/btnlapiz.png);
+}
+
+.sigAccion a.sigIcnHref .btnInfo, .sigAccion a.sigIcnHref .btnInfo
+{
+background-image: url(iconos/blanco/btninfo.png);
+}
+
+
+
+ /*-----*/
+/*----------------------IMAGENES DE LOS BOTONES (BORDE BLANCO)----------------------*/
+
+
+.sigAccion .btnAceptar, .sigAccion .btnAceptar
+{
+background-image: url(iconos/blanco/aceptar.png);
+}
+
+.sigAccion .btnAnular, .sigAccion .btnAnular
+{
+background-image: url(iconos/blanco/btnanular.png);
+}
+
+.sigAccion .btnAnadir, .sigAccion .btnAnadir
+{
+background-image: url(iconos/blanco/anadir.png);
+}
+
+.sigAccion .btnActivar, .sigAccion .btnActivar
+{
+background-image: url(iconos/blanco/activar.png);
+}
+
+.sigAccion .btnDesactivar, .sigAccion .btnDesactivar
+{
+background-image: url(iconos/blanco/desactivar.png);
+}
+
+
+.sigAccion .btnActualizar, .sigAccion .btnActualizar
+{
+background-image: url(iconos/blanco/actualizar.png);
+}
+
+.sigAccion .btnAyuda, .sigAccion .btnAyuda
+{
+background-image: url(iconos/blanco/ayuda.png);
+}
+
+
+.sigAccion .btnBajar, .sigAccion .btnBajar
+{
+background-image: url(iconos/blanco/bajar.png);
+}
+
+
+.sigAccion .btnBorrar, .sigAccion .btnBorrar
+{
+background-image: url(iconos/blanco/borrar.png);
+}
+.sigAccion .btnBuscar, .sigAccion .btnBuscar
+{
+
+background-image: url(iconos/blanco/buscar.png);
+}
+
+.sigAccion .btnCalendario, .sigAccion .btnCalendario
+{
+background-image: url(iconos/blanco/calendario.png);
+}
+.sigAccion .btnCancelar, .sigAccion .btnCancelar
+{
+background-image: url(iconos/blanco/cancelar.png);
+}
+
+.sigAccion .btnCerrar, .sigAccion .btnCerrar
+{
+background-image: url(iconos/blanco/cancelar.png);
+}
+
+.sigAccion .btnConsultar, .sigAccion .btnConsultar
+{
+background-image: url(iconos/blanco/consultar.png);
+}
+
+.sigAccion .btnContinuar, .sigAccion .btnContinuar
+{
+background-image: url(iconos/blanco/continuar.png);
+
+}
+
+.sigAccion .btnDatosPersonales, .sigAccion .btnDatosPersonales
+{
+background-image: url(iconos/blanco/datos.png);
+}
+
+.sigAccion .btnDerecha, .sigAccion .btnDerecha
+{
+background-image: url(iconos/blanco/derecha.png);
+}
+
+.sigAccion .btnDchaTodos, .sigAccion .btnDchaTodos
+{
+background-image: url(iconos/blanco/derechatodos.png);
+}
+.sigAccion .btnDescargar, .sigAccion .btnDescargar
+{
+background-image: url(iconos/blanco/descargar.png);
+}
+
+.sigAccion .btnDuplicar, .sigAccion .btnDuplicar
+{
+background-image: url(iconos/blanco/duplicar.png);
+}
+
+.sigAccion .btnEmail, .sigAccion .btnEmail
+{
+background-image: url(iconos/blanco/email.png);
+}
+
+
+.sigAccion .btnGrabar, .sigAccion .btnGrabar
+{
+background-image: url(iconos/blanco/grabar.png);
+}
+
+.sigAccion .btnGenerar, .sigAccion .btnGenerar
+{
+background-image: url(iconos/blanco/generar.png);
+}
+
+.sigAccion .btnImprimir, .sigAccion .btnImprimir
+{
+background-image: url(iconos/blanco/imprimir.png);
+}
+
+.sigAccion .btnIzquierda, .sigAccion .btnIzquierda
+{
+background-image: url(iconos/blanco/izquierda.png);
+}
+
+.sigAccion .btnIzqdaTodos, .sigAccion .btnIzqdaTodos
+{
+background-image: url(iconos/blanco/izquierdatodos.png);
+}
+
+.sigAccion .btnLimpiar, .sigAccion .btnLimpiar
+{
+background-image: url(iconos/blanco/limpiar.png);
+}
+
+.sigAccion .btnModificar, .sigAccion .btnModificar
+{
+background-image: url(iconos/blanco/modificar.png);
+}
+
+.sigAccion .btnMultiidioma, .sigAccion .btnMultiidioma
+{
+background-image: url(iconos/blanco/multiidioma.png);
+}
+
+.sigAccion .btnRango, .sigAccion .btnRango
+{
+background-image: url(iconos/blanco/rango.png);
+}
+
+.sigAccion .btnSalir, .sigAccion .btnSalir
+{
+background-image: url(iconos/blanco/salir.png);
+}
+
+.sigAccion .btnSeleccionar, .sigAccion .btnSeleccionar
+{
+background-image: url(iconos/blanco/seleccionar.png);
+}
+
+.sigAccion .btnSinrango, .sigAccion .btnSinrango
+{
+background-image: url(iconos/blanco/sinrango.png);
+}
+
+.sigAccion .btnSubir, .sigAccion .btnSubir
+{
+background-image: url(iconos/blanco/subir.png);
+}
+
+.sigAccion .btnVolver, .sigAccion .btnVolver
+{
+background-image: url(iconos/blanco/volver.png);
+}
+
+.sigAccion .btnMovil, .sigAccion .btnMovil
+{
+background-image: url(iconos/blanco/btnmovil.png);
+}
+
+.sigAccion .btnCarpeta, .sigAccion .btnCarpeta
+{
+background-image: url(iconos/blanco/btncarpeta.png);
+}
+
+.sigAccion .btnSubirCarpeta, .sigAccion .btnSubirCarpeta
+{
+background-image: url(iconos/blanco/btnsubircarpeta.png);
+}
+.sigAccion .btnNuevaCarpeta .sigAccion .btnNuevaCarpeta
+{
+background-image: url(iconos/blanco/btnnuevacarpeta.png);
+}
+
+.sigAccion .btnAdjunto, .sigAccion .btnAdjunto
+{
+background-image: url(iconos/blanco/btnadjunto.png);
+}
+
+.sigAccion .btnNuevoAdjunto, .sigAccion .btnNuevoAdjunto
+{
+background-image: url(iconos/blanco/btnnuevoadjunto.png);
+}
+
+.sigAccion .btnCargar, .sigAccion .btnCargar
+{
+background-image: url(iconos/blanco/btncargar.png);
+}
+
+.sigAccion .btnLapiz, .sigAccion .btnLapiz
+{
+background-image: url(iconos/blanco/btnlapiz.png);
+}
+.sigAccion .btnInfo, .sigAccion .btnInfo
+{
+background-image: url(iconos/blanco/btninfo.png);
+}
+
+
+/*--------------------IMAGENES DE LOS ICONOS--------------------*/
+
+
+.sigAccion a.sigIcnHref .btnAceptar, .sigAccion a.sigIcnHref .btnAceptar
+{
+background-image: url(iconos/blanco/aceptar.png);
+}
+
+.sigAccion a.sigIcnHref .btnAnular, .sigAccion a.sigIcnHref .btnAnular
+{
+background-image: url(iconos/blanco/btnanular.png);
+}
+
+.sigAccion a.sigIcnHref .btnAnadir, .sigAccion a.sigIcnHref .btnAnadir
+{
+background-image: url(iconos/blanco/anadir.png);
+}
+
+.sigAccion a.sigIcnHref .btnActivar, .sigAccion a.sigIcnHref .btnActivar
+{
+background-image: url(iconos/blanco/activar.png);
+}
+
+.sigAccion a.sigIcnHref .btnDesactivar, .sigAccion a.sigIcnHref .btnDesactivar
+{
+background-image: url(iconos/blanco/desactivar.png);
+}
+
+
+.sigAccion a.sigIcnHref .btnActualizar, .sigAccion a.sigIcnHref .btnActualizar
+{
+background-image: url(iconos/blanco/actualizar.png);
+}
+
+.sigAccion a.sigIcnHref .btnAyuda, .sigAccion a.sigIcnHref .btnAyuda
+{
+background-image: url(iconos/blanco/ayuda.png);
+}
+
+.sigAccion .btnBajar, .sigAccion .btnBajar
+{
+background-image: url(iconos/blanco/bajar.png);
+}
+
+
+
+.sigAccion a.sigIcnHref .btnBorrar, .sigAccion a.sigIcnHref .btnBorrar
+{
+background-image: url(iconos/blanco/borrar.png);
+}
+.sigAccion a.sigIcnHref .btnBuscar, .sigAccion a.sigIcnHref .btnBuscar
+{
+background-image: url(iconos/blanco/buscar.png);
+}
+
+.sigAccion a.sigIcnHref .btnCalendario, .sigAccion a.sigIcnHref .btnCalendario
+{
+background-image: url(iconos/blanco/calendario.png);
+}
+.sigAccion a.sigIcnHref .btnCancelar, .sigAccion a.sigIcnHref .btnCancelar
+{
+background-image: url(iconos/blanco/cancelar.png);
+}
+
+.sigAccion a.sigIcnHref .btnCerrar, .sigAccion a.sigIcnHref .btnCerrar
+{
+background-image: url(iconos/blanco/cerrar2.png);
+
+}
+
+.sigAccion a.sigIcnHref .btnConsultar, .sigAccion a.sigIcnHref .btnConsultar
+{
+background-image: url(iconos/blanco/consultar.png);
+}
+
+.sigAccion a.sigIcnHref .btnContinuar, .sigAccion a.sigIcnHref .btnContinuar
+{
+background-image: url(iconos/blanco/continuar.png);
+}
+
+.sigAccion a.sigIcnHref .btnDatosPersonales, .sigAccion a.sigIcnHref .btnDatosPersonales
+{
+background-image: url(iconos/blanco/datos.png);
+}
+
+.sigAccion a.sigIcnHref .btnDerecha, .sigAccion a.sigIcnHref .btnDerecha
+{
+background-image: url(iconos/blanco/derecha.png);
+}
+
+.sigAccion a.sigIcnHref .btnDchaTodos, .sigAccion a.sigIcnHref .btnDchaTodos
+{
+background-image: url(iconos/blanco/derechatodos.png);
+}
+.sigAccion a.sigIcnHref .btnDescargar, .sigAccion a.sigIcnHref .btnDescargar
+{
+background-image: url(iconos/blanco/descargar.png);
+}
+
+.sigAccion a.sigIcnHref .btnDuplicar, .sigAccion a.sigIcnHref .btnDuplicar
+{
+background-image: url(iconos/blanco/duplicar.png);
+}
+
+.sigAccion a.sigIcnHref .btnEmail, .sigAccion a.sigIcnHref .btnEmail
+{
+background-image: url(iconos/blanco/email.png);
+}
+
+.sigAccion a.sigIcnHref .btnGrabar, .sigAccion a.sigIcnHref .btnGrabar
+{
+background-image: url(iconos/blanco/grabar.png);
+}
+
+.sigAccion a.sigIcnHref .btnGenerar, .sigAccion a.sigIcnHref .btnGenerar
+{
+background-image: url(iconos/blanco/generar.png);
+}
+
+.sigAccion a.sigIcnHref .btnImprimir, .sigAccion a.sigIcnHref .btnImprimir
+{
+background-image: url(iconos/blanco/imprimir.png);
+}
+
+.sigAccion a.sigIcnHref .btnIzquierda, .sigAccion a.sigIcnHref .btnIzquierda
+{
+background-image: url(iconos/blanco/izquierda.png);
+}
+
+.sigAccion a.sigIcnHref .btnIzqdaTodos, .sigAccion a.sigIcnHref .btnIzqdaTodos
+{
+background-image: url(iconos/blanco/izquierdatodos.png);
+}
+
+.sigAccion a.sigIcnHref .btnLimpiar, .sigAccion a.sigIcnHref .btnLimpiar
+{
+background-image: url(iconos/blanco/limpiar.png);
+}
+
+.sigAccion a.sigIcnHref .btnModificar, .sigAccion a.sigIcnHref .btnModificar
+{
+background-image: url(iconos/blanco/modificar.png);
+}
+
+.sigAccion a.sigIcnHref .btnMultiidioma, .sigAccion a.sigIcnHref .btnMultiidioma
+{
+background-image: url(iconos/blanco/multiidioma.png);
+}
+
+.sigAccion a.sigIcnHref .btnRango, .sigAccion a.sigIcnHref .btnRango
+{
+background-image: url(iconos/blanco/rango.png);
+}
+
+.sigAccion a.sigIcnHref .btnSalir, .sigAccion a.sigIcnHref .btnSalir
+{
+background-image: url(iconos/blanco/salir.png);
+}
+
+.sigAccion a.sigIcnHref .btnSeleccionar, .sigAccion a.sigIcnHref .btnSeleccionar
+{
+background-image: url(iconos/blanco/seleccionar.png);
+}
+
+.sigAccion a.sigIcnHref .btnSinrango, .sigAccion a.sigIcnHref .btnSinrango
+{
+background-image: url(iconos/blanco/sinrango.png);
+}
+
+.sigAccion .btnSubir, .sigAccion .btnSubir
+{
+background-image: url(iconos/blanco/subir.png);
+}
+
+
+.sigAccion a.sigIcnHref .btnVolver, .sigAccion a.sigIcnHref .btnVolver
+{
+background-image: url(iconos/blanco/volver.png);
+}
+
+.sigAccion a.sigIcnHref .btnMovil, .sigAccion a.sigIcnHref .btnMovil
+{
+background-image: url(iconos/blanco/btnmovil.png);
+}
+
+.sigAccion a.sigIcnHref .btnCargar, .sigAccion a.sigIcnHref .btnCargar
+{
+background-image: url(iconos/blanco/btncargar.png);
+}
+
+.sigAccion a.sigIcnHref .btnLapiz, .sigAccion a.sigIcnHref .btnLapiz
+{
+background-image: url(iconos/blanco/btnlapiz.png);
+}
+
+.sigAccion a.sigIcnHref .btnInfo, .sigAccion a.sigIcnHref .btnInfo
+{
+background-image: url(iconos/blanco/btninfo.png);
+}
+
+
+/*-------------------------------------------------------
+DISABLEDS
+----------------------------------------------------------*/
+
+
+
+.sigAccion a.Disabled span, .sigAccion a.disabled span,
+.sigAccion a.Disabled:hover span, .sigAccion a.disabled:hover span,
+.sigAccion a.Disabled:active span, .sigAccion a.disabled:active span,
+.sigAccion a.Disabled:link span, .sigAccion a.disabled:link span,
+.sigAccion a.Disabled:visited span, .sigAccion a.disabled:visited span
+{
+color: #cbcbcb;
+}
+
+
+
+.sigAccion a.Disabled , .sigAccion a.disabled ,
+.sigAccion a.Disabled:hover, .sigAccion a.disabled:hover
+{
+background-position: 0 -61.1px !important;
+/**background-position: 0 -62.1px ;
+*background-position: 0 -62.1px !important ;
+*padding-bottom:3px !important;
+*padding-top:3px !important;   */
+cursor: default;
+
+}
+
+/*-------------- Símbolos diferentes estados ---------------*/
+td.simbolosEstados {
+	height:33px;
+	vertical-align:middle;
+	text-align:center;
+	overflow:hidden;
+	position:relative
+}
+
+span.simbolosEstados {
+	display:inline-block;
+	vertical-align:middle;
+}
+
+td.simbolosEstados ul, span.simbolosEstados ul{
+	list-style-type: none;
+	margin: 4px 0 0;
+	padding:0;
+	clear:left;
+	float:left;
+    position:relative;
+	left:50%;
+}
+
+td.simbolosEstados ul li, span.simbolosEstados ul li{
+	margin-left:5px;
+	margin-right:5px;
+	float:left;
+	display:block;
+	position:relative;
+	right:50%;
+	height:23px;
+	padding-left:21px;
+	background: url(iconos/smbEstados.png) no-repeat 0 31px;
+}
+
+td.simbolosEstados ul li.smbOk, span.simbolosEstados ul li.smbOk{ 					background-position: 0 0px;}
+td.simbolosEstados ul li.smbWarning, span.simbolosEstados ul li.smbWarning{		background-position: 0 -31px;}
+td.simbolosEstados ul li.smbKo, span.simbolosEstados ul li.smbKo{					background-position: 0 -62px;}
+td.simbolosEstados ul li.smbCheck, span.simbolosEstados ul li.smbCheck{			background-position: 0 -93px;}
+td.simbolosEstados ul li.smbUncheck, span.simbolosEstados ul li.smbUncheck{		background-position: 0 -124px;}
+td.simbolosEstados ul li.smbLocked, span.simbolosEstados ul li.smbLocked{			background-position: 0 -155px;}
+td.simbolosEstados ul li.smbUnlocked, span.simbolosEstados ul li.smbUnlocked{		background-position: 0 -186px;}
+td.simbolosEstados ul li.smbVisa, span.simbolosEstados ul li.smbVisa{
+	background-position: 0 -217px;
+	height:25px;
+	padding-left:35px;
+}
+td.simbolosEstados ul li.smbMastercard, span.simbolosEstados ul li.smbMastercard{
+	background-position: 0 -252px;
+	height:25px;
+	padding-left: 35px;
+}
+
+
+td.simbolosEstados ul li.smbBlue, span.simbolosEstados ul li.smbBlue{		background-position: 0 -308px;}
+td.simbolosEstados ul li.smbPurple, span.simbolosEstados ul li.smbPurple{		background-position: 0 -336px;}
+td.simbolosEstados ul li.smbYellow, span.simbolosEstados ul li.smbYellow{		background-position: 0 -365px;}
+td.simbolosEstados ul li.smbAlert, span.simbolosEstados ul li.smbAlert{
+	background-position: 0 -281px;
+	height:25px;
+	padding-left: 23px;
+}

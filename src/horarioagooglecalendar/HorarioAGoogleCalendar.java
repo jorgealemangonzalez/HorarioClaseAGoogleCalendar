@@ -14,6 +14,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 
 import org.jsoup.nodes.Document;
 
@@ -30,7 +31,6 @@ import com.google.api.client.util.store.DataStoreFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.calendar.CalendarScopes;
 import com.google.api.services.calendar.model.Calendar;
-import com.google.api.services.samples.calendar.cmdline.CalendarSample;
 
 /**
  *
@@ -103,7 +103,17 @@ public class HorarioAGoogleCalendar {
 			return;
 		}
 		//DEBUG
-		//for(Clase c : clases) c.print();  
+		/*int cont = 0;
+		int contWrong = 0;
+		for(Clase c : clases){
+			cont++;
+			//c.print();
+			if(c.diaInicio.after(new Date(2017-1900, 0, 0))||c.diaInicio.before(new Date(2016-1900, 0, 0))){
+				c.print();
+				contWrong++;
+			}
+		}
+		System.out.println("\nDe "+cont+" clases, "+contWrong+" no son en 2016. Error: "+(double)contWrong/cont+"\n");*/
 		//END_DEBUG
 
 		System.out.println("Clases extraidas correctamente");

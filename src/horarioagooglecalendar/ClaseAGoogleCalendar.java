@@ -63,9 +63,9 @@ public class ClaseAGoogleCalendar {
 	}
 	
 	public static void addClase(com.google.api.services.calendar.Calendar client, Calendar calendar, Clase clase) throws IOException{
-		Integer colorid = 1;
-		if(tituloClase.)//TODO buscar el titulo de la clase , si no lo encuentra insertarla , luego usar el id de la lista para ponerlo en colorid
-		{}
+		//Integer colorid = 1;
+		//if(tituloClase.)//TODO buscar el titulo de la clase , si no lo encuentra insertarla , luego usar el id de la lista para ponerlo en colorid
+		//{}
 		
 		Event event = new Event();
 	    event.setSummary(clase.titulo);
@@ -74,7 +74,7 @@ public class ClaseAGoogleCalendar {
 	    event.setStart(new EventDateTime().setDateTime(start));
 	    DateTime end = new DateTime(clase.diaFin, TimeZone.getTimeZone("UTC"));
 	    event.setEnd(new EventDateTime().setDateTime(end));
-	    event.setColorId(colorid.toString());
+	    //event.setColorId(colorid.toString());
 		client.events().insert(calendar.getId(), event).execute();
 	}
 }

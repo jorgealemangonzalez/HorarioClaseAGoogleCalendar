@@ -1,0 +1,454 @@
+/* Validada */
+/*-------------------------------------------------------------------------------------------------
+-Producto:	ESTIL
+-Universidad: UPF
+-Versión: rev. 2.0.57
+-Compatibilidad: FF 3.X y sup., IE 7 y sup., Chrome 12 y sup., Opera 10 y sup., Safari 5 y sup.
+-Autores:	ARAM, AVIM, EROF, JMSM, RCOJ, TMOP 
+			SIGMA Gestión Universitaria
+			http://www.gestionuniversitariasigma.com/
+---------------------------------------------------------------------------------------------------*/
+
+#AplZonaPaginacion,
+#aplZonaPaginacion {
+    background-color:#4C4C4C;
+    height:32px;
+    list-style-type: none;
+    margin: 0 6px 10px 26px;
+    text-align: center;
+}
+
+#AplZonaPaginacion ul, #aplZonaPaginacion ul { padding-top:7px; }
+
+#AplZonaPaginacion li,
+#aplZonaPaginacion li{
+    border-left:1px solid #fff;
+    display: inline;
+    padding: 0px 6px 0px 6px;
+}
+
+#AplZonaPaginacion li a,
+#aplZonaPaginacion li a {
+    background:transparent;
+    color:#fff;
+    font-size: 12px;
+    font-style:normal;
+    font-weight:bold;
+    margin: 0px 0px 0px 1px;
+    text-decoration: none;
+}
+
+#AplZonaPaginacion li a:hover, #aplZonaPaginacion li a:hover { text-decoration: underline; }
+
+#AplZonaPaginacion li.first,
+#aplZonaPaginacion li.first {
+    border-left:none;
+    padding-right:10px;
+}
+
+#AplZonaPaginacion li.first a,
+#aplZonaPaginacion li.first a {
+    background:url("imagenes/AplZonaPaginacion_01.png") no-repeat left top;
+    background-repeat: no-repeat;
+    color:#fff;
+    font-size: 11px;
+    font-weight:bold;
+    padding: 0 0 5px 20px;
+}
+
+#AplZonaPaginacion li.first a:hover,
+#aplZonaPaginacion li.first a:hover {
+    background:url("imagenes/AplZonaPaginacion_01b.png") no-repeat left top;
+    background-repeat: no-repeat;
+    color:#fff;
+    padding-bottom:5px;
+    text-decoration:underline;
+}
+
+#AplZonaPaginacion li.last, #aplZonaPaginacion li.last { padding: 0 0 5px 10px; }
+
+#AplZonaPaginacion li.last a,
+#aplZonaPaginacion li.last a {
+    background:url("imagenes/AplZonaPaginacion_02.png") no-repeat right top;
+    background-position: right;
+    background-repeat: no-repeat;
+    color:#fff;
+    font-size: 11px;
+    font-weight:bold;
+    padding: 0 20px 5px 0;
+}
+
+#AplZonaPaginacion li.last a:hover,
+#aplZonaPaginacion li.last a:hover {
+    background:url("imagenes/AplZonaPaginacion_02b.png") no-repeat right top;
+    background-repeat: no-repeat;
+    color:#fff;
+    padding-bottom:5px;
+    text-decoration:underline;
+}
+
+#AplZonaPaginacion .current a, #aplZonaPaginacion .current a { text-decoration:underline; }
+
+
+#AplZonaPaginacion .disabled a:link, #aplZonaPaginacion .disabled a:link { display: none; }
+
+/*########################################################################
+     PAGINACIÓN JQUERY
+########################################################################*/
+
+.aplZonaPaginacion {
+    background-color: #4C4C4C;
+    height: 32px;
+    list-style-type: none;
+    margin: 20px auto 10px auto;
+    text-align: center;
+    width: 97%;
+}
+
+.aplZonaPaginacion div {
+    height: 30px;
+    margin: auto;
+    padding: auto;
+    position: relative;
+    text-align: center;
+}
+
+.aplZonaPaginacion .paginas1{ width: 13%; }
+
+.aplZonaPaginacion .paginas2{ width: 16%; }
+
+.aplZonaPaginacion .paginas3{ width: 18%; }
+
+.aplZonaPaginacion .paginas4{ width: 21%; }
+
+.aplZonaPaginacion .paginas5{ width: 24%; }
+
+.aplZonaPaginacion .paginas6{ width: 26%; }
+
+.aplZonaPaginacion .paginas7{ width: 29%; }
+
+.aplZonaPaginacion .paginas8{ width: 32%; }
+
+.aplZonaPaginacion .paginas9{ width: 35%; }
+
+.aplZonaPaginacion .paginas10{ width: 37%; }
+
+.aplZonaPaginacion div div.short {
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 74px;
+}
+
+.aplZonaPaginacion div div.short input {
+    border: none;
+    float: left;
+    height: 18px;
+    margin-left: 8px;
+    width: 28px;
+}
+
+.aplZonaPaginacion div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 5px;
+}
+
+.aplZonaPaginacion div ul li {
+    background:#fff;
+    border:1px solid black;
+    border-radius: 4px;
+    height: 20px;
+    margin: 0px 0px 0px 2px;
+    text-align: center;
+    text-decoration: none;
+    width: 20px;
+    display: inline-block;
+    display: -moz-inline-stack; /* FF2*/
+    display: inline-block;
+    *display: inline; /* IE */
+    zoom: 1; /* IE7 (hasLayout)*/
+}
+
+.aplZonaPaginacion div ul li a.normal {
+    border-radius: 4px;
+    color:#000;
+    display: inline-block;
+    font-size: 12px;
+    font-style:normal;
+    font-weight:bold;
+    height: 17px;
+    padding-top: 3px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.aplZonaPaginacion div ul li:hover {
+    background-color: #BFBFBF;
+    border-radius: 4px;
+    }
+
+.aplZonaPaginacion div ul li a.active {
+    border-radius: 2px;
+    color:#fff;
+    font-size: 12px;
+    font-style:normal;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.aplZonaPaginacion div ul .active, .aplZonaPaginacion div ul .active:hover { background:#99141B; }
+
+.aplZonaPaginacion div ul .active a, .aplZonaPaginacion div ul .active a:hover { color: white; }
+
+.aplZonaPaginacion div span {
+    color: White;
+    float: left;
+    margin-left: 4px;
+}
+
+.aplZonaPaginacion div .btnFirst,
+.aplZonaPaginacion div .btnLast,
+.aplZonaPaginacion div .btnPrev,
+.aplZonaPaginacion div .btnNext {
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    margin: 2px 4px 0 4px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    z-index: 2;
+}
+
+.aplZonaPaginacion div .btnFirst { background: url("imagenes/primer_normal.png") no-repeat scroll 0 0 transparent; float:left;}
+
+.aplZonaPaginacion div .btnPrev { background: url("imagenes/anterior_normal.png") no-repeat scroll 0 0 transparent;float:left; }
+
+.aplZonaPaginacion div .btnLast { background: url("imagenes/ultim_normal.png") no-repeat scroll 0 0 transparent; float:right;}
+
+.aplZonaPaginacion div .btnNext { background: url("imagenes/seguent_normal.png") no-repeat scroll 0 0 transparent; float:right;}
+
+.aplZonaPaginacion div div.btnFirst:hover { background: url("imagenes/primer_hover.png") no-repeat scroll 0 0 transparent; }
+
+.aplZonaPaginacion div div.btnPrev:hover { background: url("imagenes/anterior_hover.png") no-repeat scroll 0 0 transparent; }
+
+.aplZonaPaginacion div div.btnLast:hover { background: url("imagenes/ultim_hover.png") no-repeat scroll 0 0 transparent; }
+
+.aplZonaPaginacion div div.btnNext:hover { background: url("imagenes/seguent_hover.png") no-repeat scroll 0 0 transparent; }
+
+.aplZonaPaginacion .rotulos {
+    float: right;
+    margin: 10px 5px 0 0;
+}
+
+.aplZonaPaginacion .rotulos span, .aplZonaPaginacion .rotulos span b { color: white; }
+
+.aplZonaPaginacion .rotulos span { font-size: 10px; }
+
+<<<<<<< .mine
+.aplZonaPaginacion .rotulos span b{ font-size: 12px; }
+
+.aplZonaPaginacion select {
+    float: left;
+    margin: -24px 0 0 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.aplZonaPaginacion select option{ color: #4C4C4C; }=======
+.aplZonaPaginacion .rotulos span b{ font-size: 12px; }
+
+/*########################################################################
+     PAGINACIÓN JQUERY
+########################################################################*/
+
+.aplZonaPaginacion {
+    background-color: #4C4C4C;
+    height: 32px;
+    list-style-type: none;
+    margin: 9px auto 30px auto;
+    text-align: center;
+    width: 97%;
+}
+
+.aplZonaPaginacion div {
+    height: 30px;
+    margin: auto;
+    padding: auto;
+    position: relative;
+    text-align: center;
+}
+
+.aplZonaPaginacion .paginas1{ width: 180px; }
+
+.aplZonaPaginacion .paginas2{ width: 200px; }
+
+.aplZonaPaginacion .paginas3{ width: 220px; }
+
+.aplZonaPaginacion .paginas4{ width: 240px; }
+
+.aplZonaPaginacion .paginas5{ width: 260px; }
+
+.aplZonaPaginacion .paginas6{ width: 280px; }
+
+.aplZonaPaginacion .paginas7{ width: 300px; }
+
+.aplZonaPaginacion .paginas8{ width: 320px; }
+
+.aplZonaPaginacion .paginas9{ width: 340px; }
+
+.aplZonaPaginacion .paginas10{ width: 360px; }
+
+.aplZonaPaginacion div div.short {
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 0;
+    width: 74px;
+}
+
+.aplZonaPaginacion div div.short input {
+    border: none;
+    float: left;
+    height: 18px;
+    margin-left: 8px;
+    width: 28px;
+}
+
+.aplZonaPaginacion div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 5px;
+}
+
+.aplZonaPaginacion div ul li {
+    background:#fff;
+    border:1px solid black;
+    border-radius: 4px;
+    height: 20px;
+    margin: 0px 0px 0px 2px;
+    text-align: center;
+    text-decoration: none;
+    width: 20px;
+    display: inline-block;
+    display: -moz-inline-stack; /* FF2*/
+    display: inline-block;
+    *display: inline; /* IE */
+    zoom: 1; /* IE7 (hasLayout)*/
+}
+
+.aplZonaPaginacion div ul li a.normal {
+    border-radius: 4px;
+    color:#000;
+    display: inline-block;
+    font-size: 12px;
+    font-style:normal;
+    font-weight:bold;
+    height: 17px;
+    padding-top: 3px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    width: 20px;
+}
+
+.aplZonaPaginacion div ul li:hover {
+    background-color: #BFBFBF;
+    border-radius: 4px;
+}
+
+.aplZonaPaginacion div ul li a.active {
+    border-radius: 2px;
+    color:#fff;
+    font-size: 12px;
+    font-style:normal;
+    font-weight:bold;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.aplZonaPaginacion div ul .active, .aplZonaPaginacion div ul .active:hover { background:#99141B; }
+
+.aplZonaPaginacion div ul .active a, .aplZonaPaginacion div ul .active a:hover { color: white; }
+
+.aplZonaPaginacion div span {
+    color: White;
+    float: left;
+    margin-left: 4px;
+}
+
+.aplZonaPaginacion div .btnFirst,
+.aplZonaPaginacion div .btnLast,
+.aplZonaPaginacion div .btnPrev,
+.aplZonaPaginacion div .btnNext {
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    margin: 2px 4px 0 4px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    width: 16px;
+    z-index: 2;
+}
+
+.aplZonaPaginacion div .btnFirst { background: url("imagenes/primer_normal.png") no-repeat scroll 0 0 transparent; float:left;}
+
+.aplZonaPaginacion div .btnPrev { background: url("imagenes/anterior_normal.png") no-repeat scroll 0 0 transparent;float:left; }
+
+.aplZonaPaginacion div .btnLast { background: url("imagenes/ultim_normal.png") no-repeat scroll 0 0 transparent; float:right;}
+
+.aplZonaPaginacion div .btnNext { background: url("imagenes/seguent_normal.png") no-repeat scroll 0 0 transparent; float:right;}
+
+.aplZonaPaginacion div div.btnFirst:hover { background: url("imagenes/primer_hover.png") no-repeat scroll 0 0 transparent; }
+
+.aplZonaPaginacion div div.btnPrev:hover { background: url("imagenes/anterior_hover.png") no-repeat scroll 0 0 transparent; }
+
+.aplZonaPaginacion div div.btnLast:hover { background: url("imagenes/ultim_hover.png") no-repeat scroll 0 0 transparent; }
+
+.aplZonaPaginacion div div.btnNext:hover { background: url("imagenes/seguent_hover.png") no-repeat scroll 0 0 transparent; }
+
+.aplZonaPaginacion .rotulos {
+    float: right;
+    margin: 8px 5px -6px 0;
+}
+
+.aplZonaPaginacion .rotulos span, .aplZonaPaginacion .rotulos span b { color: #000; }
+
+.aplZonaPaginacion .rotulos span { font-size: 10px; }
+
+.aplZonaPaginacion .rotulos span b{ font-size: 10px; }
+
+.aplZonaPaginacion .rotulos select,
+.aplZonaPaginacion .rotulos select option{
+    color: #000;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.aplZonaPaginacion .rotulos select {
+    border: 1px solid black;
+    margin: -3px 10px 0 40px;
+    border-radius: 3px;
+}
+
+.aplZonaPaginacion .rotulos label{
+    color: #000;
+    font-size: 10px;
+    /*font-weight: bold;*/
+    margin: -5px 5px 0 0;
+}>>>>>>> .r1912

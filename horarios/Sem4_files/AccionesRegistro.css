@@ -1,0 +1,68 @@
+/* Validada */
+/*-------------------------------------------------------------------------------------------------
+-Producto:	ESTIL
+-Universidad: UPF
+-Versión: rev. 2.0.57
+-Compatibilidad: FF 3.X y sup., IE 7 y sup., Chrome 12 y sup., Opera 10 y sup., Safari 5 y sup.
+-Autores:	ARAM, AVIM, EROF, JMSM, RCOJ, TMOP 
+			SIGMA Gestión Universitaria
+			http://www.gestionuniversitariasigma.com/
+---------------------------------------------------------------------------------------------------*/
+.AccionRegistro ul, .accionRegistro ul
+{
+padding: 0;
+margin: 0;
+color: #9F6000;
+list-style-type:none
+}
+
+.AccionRegistro ul li , .accionRegistro ul li {
+display: inline;
+}
+
+.AccionRegistro ul li a, .accionRegistro ul li a
+{
+padding: 0.2em 1em;
+
+/*background-color: #FFDEAD;*/
+color:black;
+font-size:11px;
+font-style:normal;
+font-weight:bold;
+text-decoration:none;
+margin: 0 1px 0 1px;
+}
+
+.AccionRegistro ul li a:hover, .accionRegistro ul li a:hover
+{
+/*background-color: #FFC164;
+color: #9F6000;*/
+}
+
+/*
+#AplZonaSeleccion tr td.AccionRegistro:hover  , #aplZonaSeleccion tr td.accionRegistro:hover  {
+background-color: rgb(169,177,201);
+}
+*/
+
+.AccionRegistro ul li.ko a, .accionRegistro ul li.ko a
+{
+color:  red;
+}
+
+
+
+.AccionRegistro ul li.ok a, .accionRegistro ul li.ok a
+{
+color:  green;
+}
+
+.AccionRegistro ul li.warning a, .accionRegistro ul li.warning a
+{
+color:  #f8ec61;
+color:  #f8ec61;
+/*color: orange;
+background: no-repeat left center;
+background-image: url(warning.gif);
+padding-right:2px;*/
+}

@@ -1,0 +1,39 @@
+/*Estil que sobreescriu al custom.css, ja que estem convivint amb NAUS*/
+body {
+    border: 0px solid #C8102E !important;
+    background-color: #FFF !important;
+}
+
+
+.panel.calendari{
+
+border:0px solid #fff !important;
+box-shadow:0 0px 0px rgba(0, 0, 0, 0);
+}
+
+
+
+#container {
+  padding: 10px;
+  width: 95% !important;
+}
+
+
+#info{
+
+    margin: 23px auto 21px;
+    width: 95% !important;
+
+}
+
+
+#calendar {
+  margin: 0 auto 30px auto;
+  width: 95% !important;
+
+}
+
+ #botonsUp {
+   
+    width: 95% !important;
+}

@@ -184,8 +184,8 @@ public class HorarioAClase {
         System.out.println("Number of files "+docsFolder.listFiles().length);
         //END_DEBUG
         for(File doc : docsFolder.listFiles()){
-            if(doc.getPath().endsWith(".html") || doc.getPath().endsWith(".htm")){  //Google lo guarda con .htm
-                System.out.println("Cargando fichero"+ doc.getName());
+            if(doc.getPath().endsWith(".html") || doc.getPath().endsWith(".htm")){
+                System.out.println("Cargando fichero "+ doc.getName());
                 
                 StringBuilder content = new StringBuilder();
                 BufferedReader reader;

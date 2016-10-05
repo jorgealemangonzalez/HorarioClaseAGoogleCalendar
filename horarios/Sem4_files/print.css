@@ -1,0 +1,65 @@
+.navbar {
+  display:none!important;
+}
+
+.calendari{
+  margin-top: 20px !important; 
+}
+
+#botonsUp{
+margin:10px auto 0 !important;
+}
+
+
+.ui-widget-header{
+   border-width:0px 1px 0px 0px  !important;
+}
+
+td.ui-widget-content{
+   border-right: 1px solid rgb(239, 239, 239)  !important;   
+}
+
+.fc-header-left ,.fc-header-right{
+    display:none  !important;
+}     
+.fc-event{
+    margin-left:2px  !important;
+    border-width:1px  !important;
+}
+div.fc-view > div > div {
+    overflow:unset  !important;      
+}
+
+#container{
+    border:0px !important;
+    margin:0px !important;
+    padding:0px !important;
+    background: none !important;    
+}
+#centre{
+    display:none !important;
+}
+#titols h1 {
+    font-size: 17px !important;
+    margin:0 !important;
+}
+#titols h3 {
+    font-size: 13px !important;
+    margin:0 !important;
+}
+
+.fc-header-title h2{
+    font-size:20px !important; 
+    margin:0 !important;
+}
+#info{
+    border:0px  !important;
+}
+
+/*table.fc-agenda-slots tr:nth-child(2n+1) .ui-widget-content > div{
+    background:rgb(239, 239, 239) !important;
+
+}*/
+/*Si volem pijama*/
+
+

@@ -1,0 +1,369 @@
+/* Validada */
+/*-------------------------------------------------------------------------------------------------
+-Producto:	ESTIL
+-Universidad: UPF
+-Versión: rev. 2.0.57
+-Compatibilidad: FF 3.X y sup., IE 7 y sup., Chrome 12 y sup., Opera 10 y sup., Safari 5 y sup.
+-Autores:	ARAM, AVIM, EROF, JMSM, RCOJ, TMOP 
+			SIGMA Gestión Universitaria
+			http://www.gestionuniversitariasigma.com/
+---------------------------------------------------------------------------------------------------*/
+
+/*ZONA DE PESTA AS, SELECCION DE OPCION    */
+#pestanyas , #pestanyas {
+/*float: left;*/ /*taba descomentado*/
+position:relative;
+width:auto;
+padding:0;
+float:left;
+font-size: 93%;
+line-height: normal;
+text-align:center;
+left:29px !important;
+/**left:29px !important;*/
+z-index:1;
+/*	padding-bottom: 21px !important ; /*taba a cero*/
+/*padding-bottom: 0px ; */
+/*margin-right: 1px;*/
+/*margin-left:4px;*/
+/*padding-left:5px;*/
+}
+
+
+.CuerpoPestanya, .cuerpoPestanya
+{
+
+width:auto;
+clear: left;
+position:relative;
+background-color: transparent;
+border-bottom: 2px solid #AA0000;
+border-left: 2px solid #AA0000;
+border-right: 2px solid #AA0000;
+border-top: 2px solid #AA0000;
+text-align:center;
+margin-left:30px;
+margin-right:7px;
+left:0px;
+padding:12px;
+top:-2px;
+/*margin-left:10px;
+margin-right:10px;*/
+
+/*margin-left:auto;*/
+
+
+/**left: -13px !important;*/
+
+/**top:-2px !important;*/
+
+
+}
+
+
+
+#pestanyas ul, #pestanyas ul
+{
+margin: 0;
+padding: 10px 1px 0;
+list-style: none;
+
+}
+
+
+
+
+
+#pestanyas li, #pestanyas li
+{
+float: left;
+background: url("imagenes/pest_left.png") no-repeat left top;
+/*background: url("imagenes/pest_left.gif") no-repeat left top;*/
+/*background: url("imagenes/pest_left_fx.png") no-repeat left top !important;
+background: url("imagenes/pest_left_fx.gif") no-repeat left top;*/
+
+margin: 1px 0px 0px 0px;
+padding: 0 2px 0 9px;
+
+
+}
+
+#pestanyas li a, #pestanyas li a
+{
+
+display:block;
+background: url("imagenes/pest_right.png") no-repeat right top;
+/*background: url("imagenes/pest_right.gif") no-repeat right top;*/
+/*background: url("imagenes/pest_right_fxs.png") no-repeat right top !important;
+background: url("imagenes/pest_right_fxs.gif") no-repeat right top;*/
+padding: 5px 15px 4px 6px;
+text-decoration: none;
+font-weight: bold;
+color:#fff;
+
+}
+
+#pestanyas a, #pestanyas a
+{
+float: none;
+}
+
+#pestanyas a:hover, #pestanyas a:hover
+{
+color: black;
+}
+
+#pestanyas .current, #pestanyas .current
+{
+background-image: url("imagenes/pest_left_cur.png");
+/*background-image: url("imagenes/pest_left_cur.gif");*/
+margin-top:1px;
+}
+
+#pestanyas .current a, #pestanyas .current a
+{
+background-image: url("imagenes/pest_right_cur.png");
+/*background-image: url("imagenes/pest_right_cur.gif");*/
+color: black;
+
+}
+
+
+#pestanyas .ko, #pestanyas .ko
+{
+
+/*border-bottom: 1px solid #A6988D;*/
+color: #F4F4F4;
+background: url("imagenes/left_disabled.png") no-repeat left top;
+/*background: url("imagenes/left_disabled.gif") no-repeat left top;*/
+
+}
+
+#pestanyas .ko a, #pestanyas .ko a
+{
+
+/*border-bottom: 1px solid #A6988D;*/
+color: #F4F4F4;
+background: url("imagenes/right_disabled.png") no-repeat right top;
+/*	background: url("imagenes/right_disabled.gif") no-repeat right top;*/
+
+}
+
+#pestanyas .ko a:hover, #pestanyas .ko a:hover
+{
+
+color: #F4F4F4;
+cursor: default;
+}
+
+#pestanyas li.incompleto, #pestanyas li.incompleto
+{
+  background: url("imagenes/pest_left_inc.png") no-repeat left top;
+}
+
+#pestanyas li.incompleto a, #pestanyas li.incompleto a
+{
+  float: left;
+  display: block;
+  background: url("imagenes/pest_right_inc.png") no-repeat right top;
+  padding: 5px 17px 4px 11px;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight:bold;
+  color: white;
+}
+
+/*NAVEGACION INTERNA*/
+
+div#navInterna, div#navInterna
+{
+position:relative;
+margin:15px auto 15px auto;
+text-align:center;
+height:30px;
+
+}
+
+
+
+/*----------------- PARES -------------------------*/
+
+#navInterna ul a, #navInterna ul a
+{
+font-weight: bold;
+text-decoration: none;
+font-size:12px;
+}
+
+#navInterna ul, #navInterna li ul, #navInterna ul li, #navInterna ul, #navInterna li ul, #navInterna ul li
+{
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+}
+#navInterna  ul, #navInterna  ul
+{
+display:inline-block;
+background-color:#A80F19;
+padding:10px;
+border-radius:5px;
+}
+
+#navInterna ul li, #navInterna ul li
+{
+float: left;
+margin-right:3px;
+margin-left:3px;
+
+
+}
+
+#navInterna ul li a, #navInterna ul li a
+{
+color: #000;
+background: #E0DFE3 url("imagenes/right-none-arrow.png") no-repeat right top;
+padding: 3px 18px 3px 15px;
+border-top:1px solid #9F9F9F;
+display:block;
+}
+
+#navInterna ul li.parent a, #navInterna ul li.parent a
+{
+color: #000;
+background: #E0DFE3 url("imagenes/right-down-arrow.png") no-repeat right top;
+padding: 3px 25px 3px 10px;
+
+
+}
+
+
+
+#navInterna ul li a:hover, #navInterna ul li a:hover
+{
+text-decoration:underline;
+}
+
+#navInterna ul li.parent a:hover, #navInterna ul li.parent a:hover
+{
+text-decoration:none;
+background-color:#CFCFCF;
+}
+
+#navInterna ul li a:active, #navInterna ul li a:active
+{
+color: #000;
+border: 1px #ffffff inset;
+}
+
+/*----------------- FILLS -------------------------*/
+
+#navInterna ul ul, #navInterna ul ul
+{
+display: none;
+background-color:#fff;
+border:1px solid #9F9F9F;
+padding:5px 0px 5px 0px;
+margin-top:3px;
+border-radius:0px 0px 10px 10px;
+}
+
+#navInterna ul ul li, #navInterna ul ul li
+{
+float: none;
+}
+
+#navInterna ul ul li a, #navInterna ul ul li a
+{
+padding: 0px;
+margin: 0px;
+background: #E0DFE3;
+
+}
+
+#navInterna ul li:hover ul, #navInterna ul li:hover ul
+{
+display: block;
+position: absolute;
+margin-top:0px;
+margin-left:-1px;
+z-index:100000;
+
+}
+
+
+#navInterna ul li:hover ul  li a, #navInterna ul li:hover ul  li a
+{
+display: block;
+width: 150px;
+border: none;
+padding: 2px;
+border:1px solid white;
+font-size:11px;
+font-weight:normal;
+background: #E0DFE3;
+
+}
+
+#navInterna ul li ul li a:hover, #navInterna ul li ul li a:hover
+{
+
+text-decoration:underline;
+
+}
+
+#navInterna ul# li:hover ul  li a:before , #navInterna ul# li:hover ul  li a:before { content: " >> "; }
+
+
+  #navInterna.mobil ul a
+  {
+   font-size:15px; 
+  }
+  
+  #navInterna.mobil ul li a
+  {
+  background-image:none;
+  padding: 5px 18px 5px 18px;
+  border-radius: 0 0 5px;
+  }
+  
+  
+  #navInterna.mobil  ul li a:hover {
+text-decoration:underline;
+}
+
+
+  #navInterna.mobil ul li.parent a{
+     background: #E0DFE3 url("imagenes/right-down-arrow2.png") no-repeat right top;
+     padding: 5px 30px 5px 15px;
+     border-radius: 0 0 5px;
+  }
+  
+  #navInterna.mobil ul li.parent a:hover
+{
+  text-decoration:none;
+  background-color:#CFCFCF;
+}
+  
+  #navInterna.mobil ul li ul li a {
+  
+    background-image:none !important;
+    padding: 10px !important; 
+    width: 250px !important;
+    color:#000 !important;
+    font-size:14px !important;
+  
+  }
+     
+
+
+
+
+/*########################################################################
+     TABS
+########################################################################*/
+
+.ui-tabs { margin-bottom: 20px; }
+
+.ui-tabs .titulo, .ui-tabs .Titulo { background: transparent !important; }
+
+.ui-tabs .ui-tabs-nav{ padding-left: 15px; }
