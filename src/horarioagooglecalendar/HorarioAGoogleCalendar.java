@@ -14,7 +14,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Date;
 
 import org.jsoup.nodes.Document;
 
@@ -87,6 +86,7 @@ public class HorarioAGoogleCalendar {
 	/**
 	 * @param args the command line arguments
 	 */
+
 	public static void main(String[] args) {
 		System.out.println("Se van a cargar los documentos html y htm de la carpeta ./horarios ");
 		ArrayList<Document> docs = HorarioAClase.cargarDocumentos();
@@ -103,17 +103,19 @@ public class HorarioAGoogleCalendar {
 			return;
 		}
 		//DEBUG
-		/*int cont = 0;
+		/*
+		int cont = 0;
 		int contWrong = 0;
 		for(Clase c : clases){
 			cont++;
-			//c.print();
-			if(c.diaInicio.after(new Date(2017-1900, 0, 0))||c.diaInicio.before(new Date(2016-1900, 0, 0))){
-				c.print();
+			c.print();
+			if(c.diaInicio.after(new Date(2016-1900, 10, 0))||c.diaInicio.before(new Date(2016-1900, 8, 0))){
+			//	c.print();
 				contWrong++;
 			}
 		}
-		System.out.println("\nDe "+cont+" clases, "+contWrong+" no son en 2016. Error: "+(double)contWrong/cont+"\n");*/
+		System.out.println("\nDe "+cont+" clases, "+contWrong+" no son en 2016. Error: "+(double)contWrong/cont+"\n");
+		*/
 		//END_DEBUG
 
 		System.out.println("Clases extraidas correctamente");

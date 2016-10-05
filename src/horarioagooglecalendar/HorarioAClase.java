@@ -65,6 +65,7 @@ public class HorarioAClase {
            
             date.setTime(date.getTime()-1000*60*60*24*5);
             //DEBUG 2016 9 26
+            //System.out.println("\n\n\n---");
             //for(String s : startDate)
             //	System.out.println(s);
             //System.out.println(date);
@@ -89,14 +90,20 @@ public class HorarioAClase {
                 
                 style = evento.attr("style");
                 String[] distances = style.split(";");
-                int leftDist = Integer.parseInt(distances[2].replaceAll("[^0-9]",""));
+                int leftDist = (int)Double.parseDouble(distances[2].replaceAll("[^0-9.]",""));
                 //Calculamos el dia gracias a la lejania del div con respecto al borde izquierdo ( left ) 
                 int diaRelativo = (int)(((double)(leftDist-lateral))/widthMonday +0.5);
                 changeDay(diaInicio,diaRelativo);
                
                 //DEBUG
                 //System.out.println(leftDist);
-                //System.out.println("Dia : "+ (dia.getYear()+1900) + " " + dia.getMonth() + " " + dia.getDate());
+                /*if(diaInicio.getYear()+1900 != 2016){
+                	System.out.println("\n-");
+                	System.out.println(distances[2]);
+                	System.out.println(leftDist);
+                	System.out.println("Dia : "+ (diaInicio.getYear()+1900) + " " + diaInicio.getMonth() + " " + diaInicio.getDate());
+                    System.out.println(tituloDesc);
+                }*/
                 //END_DEBUG
                 //Obtener horas de inicio y fin
                 Elements els = evento.getElementsByClass("fc-event-time");
