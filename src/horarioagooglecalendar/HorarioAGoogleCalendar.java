@@ -30,6 +30,10 @@ import com.google.api.client.util.store.DataStoreFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.calendar.CalendarScopes;
 import com.google.api.services.calendar.model.Calendar;
+import java.io.ByteArrayInputStream;
+import java.io.Reader;
+import java.io.StringReader;
+import java.nio.charset.StandardCharsets;
 
 /**
  *
@@ -65,9 +69,22 @@ public class HorarioAGoogleCalendar {
 	/** Authorizes the installed application to access user's protected data. */
 	private static Credential authorize() throws Exception {
 		// load client secrets
-		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY,
-				new InputStreamReader(new FileInputStream(System.getProperty("user.dir")+"/client_secrets.json")));
-		if (clientSecrets.getDetails().getClientId().startsWith("Enter")
+		//GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY,
+		//		new InputStreamReader(new FileInputStream(System.getProperty("user.dir")+"/client_secrets.json")));
+                Reader secrets = (Reader) new StringReader("{\n" +
+"	\"installed\":{\n" +
+"		\"client_id\":\"261579083146-b5o4lb1rddgv2gvb9hmom0hi4nls4bt8.apps.googleusercontent.com\",\n" +
+"		\"project_id\":\"stalwart-fx-144910\",\n" +
+"		\"auth_uri\":\"https://accounts.google.com/o/oauth2/auth\",\n" +
+"		\"token_uri\":\"https://accounts.google.com/o/oauth2/token\",\n" +
+"		\"auth_provider_x509_cert_url\":\"https://www.googleapis.com/oauth2/v1/certs\",\n" +
+"		\"client_secret\":\"Mi5m7bZfcH1UpPoKMCMpdYP0\",\n" +
+"		\"redirect_uris\":[\"urn:ietf:wg:oauth:2.0:oob\",\"http://localhost\"]\n" +
+"	}\n" +
+"}");
+                GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(JSON_FACTORY,secrets);
+	
+                if (clientSecrets.getDetails().getClientId().startsWith("Enter")
 				|| clientSecrets.getDetails().getClientSecret().startsWith("Enter ")) {
 			System.out.println(
 					"Enter Client ID and Secret from https://code.google.com/apis/console/?api=calendar "
@@ -150,7 +167,6 @@ public class HorarioAGoogleCalendar {
 		} catch (Throwable t) {
 			t.printStackTrace();
 		}
-		System.exit(1);
 
 	}
 }

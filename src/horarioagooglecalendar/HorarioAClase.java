@@ -77,7 +77,7 @@ public class HorarioAClase {
             Elements eventos = eventosElemento.getElementsByClass("fc-event");
             for(Element evento : eventos){
             	String tituloDesc = evento.getElementsByClass("fc-event-title").first().text();
-            	if(tituloDesc.equals("Dia festiu"))
+            	if(tituloDesc.contains("Dia"))
             		continue;
             	
                 Date diaInicio = (Date)date.clone();
